@@ -19,16 +19,6 @@ Erstellen Sie eine weitere Routendatei - **catalog.js** - in diesem Ordner, wie 
 Öffnen Sie **/routes/catalog.js** und kopieren Sie den unten stehenden Code hinein:
 
 
-```plain
-/express-locallibrary-tutorial //the project root
-  /routes
-    index.js
-    users.js
-    catalog.js
-```
-
-Open **/routes/catalog.js** and copy in the code below:
-
 ```js
 const express = require("express");
 const router = express.Router();
@@ -166,14 +156,8 @@ router.get("/bookinstances", book_instance_controller.bookinstance_list);
 
 module.exports = router;
 ```
-Das Modul benötigt Express und verwendet es dann, um ein Router-Objekt zu erstellen. Die Routen werden alle auf dem Router eingerichtet, der dann exportiert wird.
 
-Die Routen werden entweder mit den .get() oder .post() Methoden auf dem Router-Objekt definiert. Alle Pfade werden mit Strings definiert (wir verwenden keine String-Muster oder regulären Ausdrücke).
-Routen, die auf eine bestimmte Ressource (z.B. Buch) einwirken, verwenden Pfadparameter, um die Objekt-ID aus der URL zu erhalten.
-
-Die Handler-Funktionen werden alle aus den Controller-Modulen importiert, die wir im vorherigen Abschnitt erstellt haben.
-
-Aktualisieren Sie das Index-Routen-Modul
+### Aktualisieren Sie das Index-Routen-Modul
 Wir haben alle unsere neuen Routen eingerichtet, aber wir haben immer noch eine Route zur ursprünglichen Seite. Lassen Sie uns diese stattdessen auf die neue Index-Seite umleiten, die wir unter dem Pfad '/catalog' erstellt haben.
 
 Öffnen Sie /routes/index.js und ersetzen Sie die vorhandene Route durch die untenstehende Funktion.
