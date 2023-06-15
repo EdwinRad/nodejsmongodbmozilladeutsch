@@ -69,7 +69,7 @@ Die Express-Router-Klasse ist eine Erweiterung des Express-Servers: Sie ermögli
 
 Die Express-Router-API ist sehr mächtig. Es ermöglicht es Ihnen, Routen zu definieren und sie an Controller zu binden, Parameter in den URLs zu spezifizieren und zu verwenden, die auf die Parameterwerte reagieren, und es ermöglicht Ihnen, spezielle Middleware an den Router zu binden, um Fehler zu behandeln.
 
-Einige Beispiele für Routen, die Sie in einem Router erstellen können, finden Sie unten. Beachten Sie, dass diese alle Routen relativ zu dem Pfad sind, an den der Router gebunden ist (z.B. wenn der Router an '/catalog' gebunden ist, dann wird auf die Route für '/' als '/catalog/' zugegriffen, usw.).
+**Einige Beispiele** für Routen, die Sie in einem Router erstellen können, finden Sie unten. Beachten Sie, dass diese alle Routen relativ zu dem Pfad sind, an den der Router gebunden ist (z.B. wenn der Router an '/catalog' gebunden ist, dann wird auf die Route für '/' als '/catalog/' zugegriffen, usw.).
 
 ```javascript
 // GET request for the Book instance.
@@ -113,15 +113,12 @@ Die erste Startseite und die Listen-Seiten codieren keine zusätzlichen Informat
 
 Im Gegensatz dazu werden die anderen URLs verwendet, um auf ein spezifisches Dokument/Modellinstanz zu wirken - diese codieren die Identität des Elements in der URL (wie oben als `<id>` dargestellt). Wir werden Pfadparameter verwenden, um die codierten Informationen zu extrahieren und sie an den Routenhandler zu übergeben (und in einem späteren Artikel werden wir dies verwenden, um dynamisch zu bestimmen, welche Informationen wir aus der Datenbank abrufen sollen). Durch die Codierung der Informationen in unserer URL benötigen wir nur eine Route für jede Ressource eines bestimmten Typs (z.B. eine Route zur Anzeige jedes einzelnen Buchartikels).
 
-> **Hinweis:** Express erlaubt Ihnen, Ihre URLs nach Belieben zu gestalten - Sie können Informationen im Körper der URL codieren, wie oben gezeigt, oder URL `GET` Parameter verwenden (z.B. `/book/?id=6`). Welchen Ansatz Sie auch wählen, die URLs sollten sauber, logisch und lesbar gehalten werden ([schauen Sie sich hier den Rat der W3C an](https://www.w3.org/Provider/Style/URI)).
 
-Als Nächstes erst
-
-ellen wir unsere Routenhandler-Callback-Funktionen und den Routencode für alle oben genannten URLs.
+Als Nächstes erstellen wir unsere Routenhandler-Callback-Funktionen und den Routencode für alle oben genannten URLs.
 
 ## Erstellen Sie die Routen-Handler-Callback-Funktionen
 
-Bevor wir unsere Routen definieren, erstellen wir zuerst alle Dummy/Skelett-Callback-Funktionen, die sie aufrufen werden. Die Callbacks werden in separaten "Controller"-Modulen für `Book`, `BookInstance`, `Genre`, und `Author` gespeichert (Sie können jede Datei/Modulstruktur verwenden, aber dies scheint eine angemessene Granularität für dieses Projekt zu sein).
+Bevor wir unsere Routen definieren, erstellen wir zuerst alle Dummy/Skelett-Callback-Funktionen, die sie aufrufen werden. Die Callbacks werden in separaten "Controller"-Modulen für `Book`, `BookInstance`, `Genre`, und `Author` gespeichert.
 
 Beginnen Sie mit der Erstellung eines Ordners für unsere Controller im Projekt-Root (**/controllers**) und erstellen Sie dann separate Controller-Dateien/Module für die Handhabung jedes der Modelle:
 
@@ -189,9 +186,7 @@ exports.author_update_post = asyncHandler(async (req, res, next) => {
 });
 ```
 
-Das Modul benötigt zunächst das `Author` Modell, das wir später verwenden werden, um auf unsere Daten zuzugreifen und sie zu aktualisieren, und den `asyncHandler` Wrapper, den wir verwenden werden, um alle Ausnahmen zu fangen, die in unseren Routen
-
-handler-Funktionen geworfen werden.
+Das Modul benötigt zunächst das `Author` Modell, das wir später verwenden werden, um auf unsere Daten zuzugreifen und sie zu aktualisieren, und den `asyncHandler` Wrapper, den wir verwenden werden, um alle Ausnahmen zu fangen, die in unseren Routen handler-Funktionen geworfen werden.
 Es exportiert dann Funktionen für jede der URLs, die wir behandeln möchten.
 Beachten Sie, dass die Erstellung, Aktualisierung und Löschung über Formulare erfolgen und daher zusätzliche Methoden zur Behandlung von Formular-Post-Anfragen haben — wir werden diese Methoden im "Formularartikel" später besprechen.
 
@@ -199,8 +194,6 @@ Die Funktionen verwenden alle die oben beschriebene Wrapper-Funktion in [Behandl
 Die Funktionen antworten mit einer Zeichenkette, die darauf hinweist, dass die zugehörige Seite noch nicht erstellt wurde.
 Wenn eine Controller-Funktion erwartet, dass sie Pfadparameter empfängt, werden diese in der Nachrichtenzeichenkette ausgegeben (siehe `req.params.id` oben).
 
-Beachten Sie, dass einige Routenfunktionen nach der Implementierung möglicherweise keinen Code enthalten, der Ausnahmen auslösen kann.
-Wir können diese zurück zu "normalen" Routenhandler-Funktionen ändern, wenn wir dazu kommen.
 
 #### BookInstance-Controller
 

@@ -169,7 +169,7 @@ router.get("/", function (req, res) {
   res.redirect("/catalog");
 });
 ```
-> **Hinweis:** Dies ist unsere erste Verwendung der [redirect()](https://expressjs.com/en/4x/api.html#res.redirect) Antwortmethode. Diese leitet auf die angegebene Seite weiter, standardmäßig mit dem HTTP-Statuscode "302 Found". Sie können den zurückgegebenen Statuscode bei Bedarf ändern und entweder absolute oder relative Pfade angeben.
+
 
 ### Aktualisieren Sie app.js
 
