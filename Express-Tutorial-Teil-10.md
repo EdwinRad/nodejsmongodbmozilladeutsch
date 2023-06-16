@@ -46,11 +46,11 @@ Erstellen Sie **/views/book_detail.pug** und fügen Sie den unten stehenden Text
 extends layout
 
 block content
-  h1 Titel: #{book.title}
+  h1 Title: #{book.title}
 
-  p #[strong Autor:]
+  p #[strong Author:]
     a(href=book.author.url) #{book.author.name}
-  p #[strong Zusammenfassung:] #{book.summary}
+  p #[strong Summary:] #{book.summary}
   p #[strong ISBN:] #{book.isbn}
   p #[strong Genre:]
     each val, index in book.genre
@@ -59,7 +59,7 @@ block content
         |,
 
   div(style='margin-left:20px;margin-top:20px')
-    h4 Kopien
+    h4 Copies
 
     each val in book_instances
       hr
@@ -71,14 +71,18 @@ block content
         p.text-warning #{val.status}
       p #[strong Imprint:] #{val.imprint}
       if val.status!='Available'
-        p #[strong Rückgabedatum:]
-
- #{val.due_back}
+        p #[strong Due back:] #{val.due_back}
       p #[strong Id:]
         a(href=val.url) #{val._id}
 
     else
-      p Es gibt keine Kopien dieses Buches in der Bibliothek.
+      p There are no copies of this book in the library.
+
+  hr
+  p
+    a(href=book.url+'/delete') Delete Book
+  p
+    a(href=book.url+'/update') Update Book
 ```
 
 Fast alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
@@ -153,21 +157,27 @@ extends layout
 
 block content
 
-  h1 Autor: #{author.name}
-  p #{author.date_of_birth} - #{author.date_of_death}
+  h1 Author: #{author.name}
+  p #{author.lifespan}
 
   div(style='margin-left:20px;margin-top:20px')
 
-    h4 Bücher
+    h4 Books
 
     dl
-      each book in author_books
-        dt
-          a(href=book.url) #{book.title}
-        dd #{book.summary}
+    each book in author_books
+      dt
+        a(href=book.url) #{book.title}
+      dd #{book.summary}
 
-      else
-        p Dieser Autor hat keine Bücher.
+    else
+      p This author has no books.
+
+  hr
+  p
+    a(href=author.url+'/delete') Delete author
+  p
+    a(href=author.url+'/update') Update author
 ```
 
 Alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
@@ -227,9 +237,9 @@ block content
 
   h1 ID: #{bookinstance._id}
 
-  p #[strong Titel:]
+  p #[strong Title:]
     a(href=bookinstance.book.url) #{bookinstance.book.title}
-  p #[strong Druck:] #{bookinstance.imprint}
+  p #[strong Imprint:] #{bookinstance.imprint}
 
   p #[strong Status:]
     if bookinstance.status=='Available'
@@ -240,8 +250,13 @@ block content
       span.text-warning #{bookinstance.status}
 
   if bookinstance.status!='Available'
-    p #[strong Zurück bis:] #{bookinstance.due_back}
-```
+    p #[strong Due back:] #{bookinstance.due_back_formatted}
+
+  hr
+  p
+    a(href=bookinstance.url+'/delete') Delete BookInstance
+  p
+    a(href=bookinstance.url+'/update') Update BookInstance```
 
 Alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
 
