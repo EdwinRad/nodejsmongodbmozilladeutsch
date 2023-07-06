@@ -18,7 +18,7 @@ npm install express-generator -g
 Um ein neues Express-Projekt mit dem Namen `local-library` zu erstellen, das die pugs-Template-Engine und CSS verwendet, geben Sie den folgenden Befehl ein:
 
 ```bash
-express --view=pugs --css=css local-library
+express --view=pug --css=css local-library
 ```
 
 Nachdem der Generator erfolgreich abgeschlossen ist, sollten Sie eine ähnliche Ausgabe sehen:
