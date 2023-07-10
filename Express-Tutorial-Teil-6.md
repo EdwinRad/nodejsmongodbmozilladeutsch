@@ -1,6 +1,3 @@
-
-# noch nicht fertig
-
 ## Erstellen Sie das Katalog-Routen-Modul
 
 Als nächstes erstellen wir _Routen_ für alle URLs, [die für die LocalLibrary-Website benötigt werden](#routes_needed_for_the_locallibrary), die die Controller-Funktionen aufrufen, die wir in den vorherigen Abschnitten definiert haben.
@@ -17,7 +14,6 @@ Erstellen Sie eine weitere Routendatei - **catalog.js** - in diesem Ordner, wie 
 ```
 
 Öffnen Sie **/routes/catalog.js** und kopieren Sie den unten stehenden Code hinein:
-
 
 ```js
 const express = require("express");
