@@ -198,8 +198,6 @@ router.post("/genre/create", genre_controller.genre_create_post);
 
 Die folgenden Unterartikel führen uns durch den Prozess des Hinzufügens der erforderlichen Formulare zu unserer Beispielanwendung. Sie müssen jeden Artikel nacheinander lesen und bearbeiten, bevor Sie mit dem nächsten fortfahren.
 
-# TODO:
-
 - [Definieren einer Seite zum Erstellen von Genre-Objekten](Express-Tutorial-Teil-12.md)
 - [Definieren einer Seite zum Erstellen von Autor-Objekten](Express-Tutorial-Teil-13.md)
 - [Definieren einer Seite zum Erstellen von Buch-Objekten](Express-Tutorial-Teil-14.md)
