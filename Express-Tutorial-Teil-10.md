@@ -256,7 +256,8 @@ block content
   p
     a(href=bookinstance.url+'/delete') Delete BookInstance
   p
-    a(href=bookinstance.url+'/update') Update BookInstance```
+    a(href=bookinstance.url+'/update') Update BookInstance
+```
 
 Alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
 
@@ -265,3 +266,17 @@ Alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
 Starten Sie die Anwendung und öffnen Sie Ihren Browser auf `http://localhost:3000/`. Wählen Sie den Link _Alle Buchexemplare_, dann wählen Sie einen der Einträge. Wenn alles korrekt eingerichtet ist, sollte Ihre Seite etwa so aussehen wie der folgende Screenshot.
 
 ![Buchexemplar Detailseite - Express Lokale Bibliothek Seite](locallibary_express_bookinstance_detail.png)
+
+### Herausforderung!
+
+Derzeit verwenden die meisten Datumsangaben auf der Website das Standard-JavaScript-Format (z. B. Tue Oct 06 2020 15:49:58 GMT+1100 (AUS Eastern Daylight Time)). Die Herausforderung für diesen Artikel besteht darin, das Erscheinungsbild der Datumsanzeige für Informationen über die Lebensspanne des Autors (Todes-/Geburtsdatum) zu verbessern und für BookInstance-Detailseiten das Format zu verwenden: Oct 6th, 2016.
+
+> Hinweis: Sie können den gleichen Ansatz wie für die Buchinstanzliste verwenden (Hinzufügen der virtuellen Eigenschaft für die Lebensspanne zum Autorenmodell und Verwendung von luxon zur Formatierung der Datumszeichenfolgen).
+
+Um diese Aufgabe zu lösen, müssen Sie:
+
+1. Ersetzen Sie die Variable due_back durch due_back_formatted auf der BookInstance-Detailseite.
+
+1. Aktualisieren Sie das Author-Modell, um eine virtuelle Eigenschaft lifespan hinzuzufügen. Die Lebensdauer sollte wie folgt aussehen: date_of_birth - date_of_death, wobei beide Werte das gleiche Datumsformat haben wie BookInstance.due_back_formatted.
+
+1. Verwenden Sie Author.lifespan in allen Ansichten, in denen Sie derzeit explizit date_of_birth und date_of_death verwenden.

@@ -57,7 +57,7 @@ Starten Sie die Anwendung und öffnen Sie Ihren Browser unter `http://localhost:
 >
 > `return this.date_of_birth ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED) : '';`
 
-## Genrelseite - Herausforderung!
+## Genreseite - Herausforderung!
 
 In diesem Abschnitt sollten Sie Ihre eigene Genrelseite implementieren. Die Seite sollte eine Liste aller Genres in der Datenbank anzeigen, wobei jedes Genre mit seiner zugehörigen Detailseite verlinkt ist. Ein Screenshot des erwarteten Ergebnisses ist unten abgebildet.
 
