@@ -155,4 +155,4 @@ BookInstanceSchema.virtual("due_back_yyyy_mm_dd").get(function () {
 
 Führen Sie die Anwendung aus und öffnen Sie Ihren Browser auf http://localhost:3000/. Wählen Sie dann den Link Neue Buchinstanz erstellen (kopieren). Wenn alles korrekt eingerichtet ist, sollte Ihre Website in etwa so aussehen wie auf dem folgenden Screenshot. Nachdem Sie eine gültige BookInstance eingereicht haben, sollte diese gespeichert werden und Sie werden zur Detailseite weitergeleitet.
 
-![](locallibary_express_bookinstance_create_empty.png)
+![](assets/locallibary_express_bookinstance_create_empty.png)

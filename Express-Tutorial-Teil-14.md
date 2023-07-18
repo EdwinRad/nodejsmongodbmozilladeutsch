@@ -214,4 +214,4 @@ Note that the code starts with -. In pug this is referred to as "unbuffered code
 
 Run the application, open your browser to http://localhost:3000/, then select the Create new book link. If everything is set up correctly, your site should look something like the following screenshot. After you submit a valid book, it should be saved and you'll be taken to the book detail page.
 
-![](locallibary_express_book_create_empty.png)
+![](assets/locallibary_express_book_create_empty.png)

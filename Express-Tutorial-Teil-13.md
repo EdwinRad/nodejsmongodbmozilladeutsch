@@ -162,6 +162,6 @@ In der obigen Vorlage fehlt ein Feld für die Eingabe des Sterbedatums. Erstelle
 
 Führen Sie die Anwendung aus, öffnen Sie Ihren Browser auf http://localhost:3000/ und wählen Sie dann den Link Neuen Autor erstellen. Wenn alles korrekt eingerichtet ist, sollte Ihre Seite in etwa so aussehen wie auf dem folgenden Screenshot. Nachdem Sie einen Wert eingegeben haben, sollte dieser gespeichert werden und Sie werden zur Autorendetailseite weitergeleitet.
 
-![](locallibary_express_author_create_empty.png)
+![](assets/locallibary_express_author_create_empty.png)
 
 > Hinweis: Wenn Sie mit verschiedenen Eingabeformaten für das Datum experimentieren, werden Sie feststellen, dass das Format yyyy-mm-dd nicht funktioniert. Das liegt daran, dass JavaScript Datumszeichenfolgen so behandelt, als enthielten sie die Zeit von 0 Stunden, aber zusätzlich Datumszeichenfolgen in diesem Format (dem ISO 8601-Standard) so behandelt, als enthielten sie die Zeit 0 Stunden UTC und nicht die Ortszeit. Wenn Ihre Zeitzone westlich von UTC liegt, wird das Datum in lokaler Zeit einen Tag vor dem eingegebenen Datum angezeigt. Dies ist eine von mehreren Komplexitäten (wie z. B. Familiennamen mit mehreren Wörtern und Bücher mit mehreren Autoren), auf die wir hier nicht eingehen.

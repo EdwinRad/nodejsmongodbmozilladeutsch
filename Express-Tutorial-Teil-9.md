@@ -47,7 +47,7 @@ block content
 
 Starten Sie die Anwendung und öffnen Sie Ihren Browser unter `http://localhost:3000/`. Dann wählen Sie den Link _Alle Autoren_. Wenn alles richtig eingerichtet ist, sollte die Seite etwa so aussehen wie im folgenden Screenshot.
 
-![Autor Liste Seite - Express Local Library site](locallibary_express_author_list.png)
+![Autor Liste Seite - Express Local Library site](assets/locallibary_express_author_list.png)
 
 > **Hinweis:** Das Aussehen der Autoren _Lebensdaten_ ist hässlich! Sie können dies verbessern, indem Sie den [gleichen Ansatz](/en-US/docs/Learn/Server-side/Express_Nodejs/Displaying_data/Date_formatting_using_moment) verwenden, den wir für die `BookInstance` Liste verwendet haben (Hinzufügen der virtuellen Eigenschaft für die Lebensdauer zum `Author` Modell).
 >
@@ -61,7 +61,7 @@ Starten Sie die Anwendung und öffnen Sie Ihren Browser unter `http://localhost:
 
 In diesem Abschnitt sollten Sie Ihre eigene Genrelseite implementieren. Die Seite sollte eine Liste aller Genres in der Datenbank anzeigen, wobei jedes Genre mit seiner zugehörigen Detailseite verlinkt ist. Ein Screenshot des erwarteten Ergebnisses ist unten abgebildet.
 
-![Genre Liste - Express Local Library site](locallibary_express_genre_list.png)
+![Genre Liste - Express Local Library site](assets/locallibary_express_genre_list.png)
 
 Die Controller-Funktion für die Genreliste muss eine Liste aller `Genre` Instanzen abrufen und diese dann zur Darstellung an die Vorlage weitergeben.
 
@@ -162,7 +162,7 @@ Die Ansicht ist sehr ähnlich zu all unseren anderen Vorlagen. Der Hauptuntersch
 
 Starten Sie die Anwendung und öffnen Sie Ihren Browser auf `http://localhost:3000/`. Wählen Sie den Link _Alle Genres_, dann wählen Sie eines der Genres (z.B. "Fantasy"). Wenn alles korrekt eingerichtet ist, sollte Ihre Seite ungefähr wie der folgende Screenshot aussehen.
 
-![Genre Detailseite - Express Local Library site](locallibary_express_genre_detail.png)
+![Genre Detailseite - Express Local Library site](assets/locallibary_express_genre_detail.png)
 
 > **Hinweis:** Sie könnten einen Fehler ähnlich wie diesen erhalten:
 >

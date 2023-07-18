@@ -130,7 +130,7 @@ p
 
 Das Steuerelement sollte nun als Link erscheinen, wie unten auf der Autorendetailseite gezeigt.
 
-![](locallibary_express_author_detail_delete.png)
+![](assets/locallibary_express_author_detail_delete.png)
 
 ## Wie sieht es aus? 
 
@@ -138,10 +138,10 @@ Führen Sie die Anwendung aus und öffnen Sie Ihren Browser auf http://localhost
 
 Wenn der Autor keine Bücher hat, wird eine Seite wie diese angezeigt. Nachdem Sie auf "Löschen" geklickt haben, wird der Server den Autor löschen und zur Autorenliste zurückkehren.
 
-![](locallibary_express_author_delete_nobooks.png)
+![](assets/locallibary_express_author_delete_nobooks.png)
 
 Wenn der Autor Bücher hat, wird Ihnen eine Ansicht wie die folgende angezeigt. Sie können dann die Bücher von ihren Detailseiten löschen (sobald der Code implementiert ist!).
 
-![](locallibary_express_author_delete_withbooks.png)
+![](assets/locallibary_express_author_delete_withbooks.png)
 
 > Hinweis: Die anderen Seiten zum Löschen von Objekten können auf ähnliche Weise implementiert werden. Wir haben das als Herausforderung belassen.

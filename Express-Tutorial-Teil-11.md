@@ -16,7 +16,7 @@ In diesem Tutorial werden wir Ihnen zeigen, wie die oben genannten Vorgänge in 
 
 First a brief overview of HTML Forms. Consider a simple HTML form, with a single text field for entering the name of some "team", and its associated label:
 
-![Beispiel für ein einfaches Namensfeld in einem HTML-Formular](form_example_name_field.png)
+![Beispiel für ein einfaches Namensfeld in einem HTML-Formular](assets/form_example_name_field.png)
 
 Das Formular ist in HTML als eine Sammlung von Elementen innerhalb der `<form>...</form>`-Tags definiert, die mindestens ein Eingabeelement des Typs `type="submit"` enthalten.
 
@@ -50,7 +50,7 @@ Bei der Formularverarbeitung kommen die gleichen Techniken zum Einsatz, die wir 
 
 Nachfolgend ist ein Ablaufdiagramm für die Verarbeitung von Formularanfragen dargestellt, beginnend mit einer Anfrage für eine Seite, die ein Formular enthält (grün dargestellt):
 
-![Flussdiagramm zur Verarbeitung von Web-Server-Formularanfragen.](web_server_form_handling.png)
+![Flussdiagramm zur Verarbeitung von Web-Server-Formularanfragen.](assets/web_server_form_handling.png)
 
 Wie im obigen Diagramm dargestellt, muss der Code für die Formularbearbeitung vor allem folgende Aufgaben erfüllen:
 

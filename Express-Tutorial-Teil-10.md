@@ -101,7 +101,7 @@ Fast alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
 
 Starten Sie die Anwendung und öffnen Sie Ihren Browser auf `http://localhost:3000/`. Wählen Sie den Link _Alle Bücher_, dann wählen Sie eines der Bücher. Wenn alles korrekt eingerichtet ist, sollte Ihre Seite ungefähr wie der folgende Screenshot aussehen.
 
-![Buch Detailseite - Express Lokale Bibliothek Seite](locallibary_express_book_detail.png)
+![Buch Detailseite - Express Lokale Bibliothek Seite](assets/locallibary_express_book_detail.png)
 
 
 # Authorendetails
@@ -186,7 +186,7 @@ Alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
 
 Starten Sie die Anwendung und öffnen Sie Ihren Browser auf `http://localhost:3000/`. Wählen Sie den Link _Alle Autoren_, dann wählen Sie einen der Autoren. Wenn alles korrekt eingerichtet ist, sollte Ihre Seite ungefähr so aussehen wie der folgende Screenshot.
 
-![Autoren Detailseite - Express Lokale Bibliothek Seite](locallibary_express_author_detail.png)
+![Autoren Detailseite - Express Lokale Bibliothek Seite](assets/locallibary_express_author_detail.png)
 
 # BookInstance detail page
 
@@ -265,7 +265,7 @@ Alles in dieser Vorlage wurde in früheren Abschnitten demonstriert.
 
 Starten Sie die Anwendung und öffnen Sie Ihren Browser auf `http://localhost:3000/`. Wählen Sie den Link _Alle Buchexemplare_, dann wählen Sie einen der Einträge. Wenn alles korrekt eingerichtet ist, sollte Ihre Seite etwa so aussehen wie der folgende Screenshot.
 
-![Buchexemplar Detailseite - Express Lokale Bibliothek Seite](locallibary_express_bookinstance_detail.png)
+![Buchexemplar Detailseite - Express Lokale Bibliothek Seite](assets/locallibary_express_bookinstance_detail.png)
 
 ### Herausforderung!
 

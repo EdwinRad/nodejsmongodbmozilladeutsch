@@ -189,11 +189,11 @@ Der letzte Teil der Seite ist der Fehlercode. Hier wird eine Liste von Fehlern g
 
 Führen Sie die Anwendung aus, öffnen Sie Ihren Browser auf http://localhost:3000/ und wählen Sie dann den Link Neues Genre erstellen. Wenn alles korrekt eingerichtet ist, sollte Ihre Seite in etwa so aussehen wie auf dem folgenden Screenshot. Nachdem Sie einen Wert eingegeben haben, sollte dieser gespeichert werden, und Sie werden zur Detailseite des Genres weitergeleitet.
 
-![](locallibary_express_genre_create_empty.png)
+![](assets/locallibary_express_genre_create_empty.png)
 
 Der einzige Fehler, auf den wir serverseitig prüfen, ist, dass das Feld "Genre" nicht leer sein darf. Der folgende Screenshot zeigt, wie die Fehlerliste aussehen würde, wenn Sie kein Genre angeben würden (rot hervorgehoben).
 
-![](locallibary_express_genre_create_error.png)
+![](assets/locallibary_express_genre_create_error.png)
 
 > Note: Our validation uses trim() to ensure that whitespace is not accepted as a genre name. We can also validate that the field is not empty on the client side by adding the value required='true' to the field definition in the form:
 

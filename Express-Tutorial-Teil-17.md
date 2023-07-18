@@ -158,6 +158,6 @@ Führen Sie die Anwendung aus, öffnen Sie Ihren Browser auf http://localhost:30
 
 Das Formular sollte genauso aussehen wie die Seite "Buch erstellen", nur mit dem Titel "Buch aktualisieren" und mit vorausgefüllten Datensatzwerten.
 
-![](locallibary_express_book_update_noerrors.png)
+![](assets/locallibary_express_book_update_noerrors.png)
 
 > Hinweis: Die anderen Seiten zum Aktualisieren von Objekten können auf ähnliche Weise implementiert werden. Wir haben das als Herausforderung belassen.
