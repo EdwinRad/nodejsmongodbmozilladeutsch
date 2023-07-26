@@ -29,7 +29,7 @@ In diesem Sinne zeigt das UML-Assoziationsdiagramm unten die Modelle, die wir in
 Das Diagramm zeigt auch die Beziehungen zwischen den Modellen, einschließlich ihrer _Multiplizitäten_. Die Multiplizitäten sind die Zahlen auf dem Diagramm, die die Anzahl (maximal und minimal) jedes Modells anzeigen, die in der Beziehung vorhanden sein können. Zum Beispiel zeigt die Verbindungslinie zwischen den Kästchen, dass ein `Book` und ein `Genre` miteinander verknüpft sind. Die Zahlen in der Nähe des `Book`-Modells zeigen, dass ein `Genre` null oder mehr `Book`s haben muss (so viele wie Sie möchten), während die Zahlen am anderen Ende der Linie neben dem `Genre` zeigen, dass ein Buch null oder mehr zugehörige `Genre`s haben kann.
 
 
-![Mongoose Library Model mit richtiger Kardinalität](library_website_-_mongoose_express.png)
+![Mongoose Library Model mit richtiger Kardinalität](assets/library_website_-_mongoose_express.png)
 
 
 ### Installation von Mongoose und MongoDB
@@ -85,20 +85,20 @@ Zunächst müssen Sie [ein Konto](https://www.mongodb.com/cloud/atlas/register) 
 Nach dem Einloggen gelangen Sie zur [Startseite](https://cloud.mongodb.com/v2):
 
 1. Klicken Sie auf die Schaltfläche **Eine Datenbank erstellen** im Abschnitt _Database Deployments_.
-   ![Eine Datenbank auf MongoDB Atlas erstellen.](mongodb_atlas_-_createdatabase.jpg)
+   ![Eine Datenbank auf MongoDB Atlas erstellen.](assets/mongodb_atlas_-_createdatabase.jpg)
 
 2. Dadurch wird der Bildschirm _Deploy a cloud database_ geöffnet. Klicken Sie unter der Option _Shared_ auf die Schaltfläche **Create**.
-   ![Eine Bereitstellungsoption auf MongoDB Atlas auswählen.](mongodb_atlas_-_deploy.jpg)
+   ![Eine Bereitstellungsoption auf MongoDB Atlas auswählen.](assets/mongodb_atlas_-_deploy.jpg)
 
 3. Dadurch wird der Bildschirm _Create a Shared Cluster_ geöffnet.
-   ![Wählen Sie einen Cloud-Anbieter auf MongoDB Atlas aus.](mongodb_atlas_-_createsharedcluster.jpg)
+   ![Wählen Sie einen Cloud-Anbieter auf MongoDB Atlas aus.](assets/mongodb_atlas_-_createsharedcluster.jpg)
 
    - Wählen Sie einen beliebigen Anbieter aus dem Abschnitt _Cloud Provider & Region_. Verschiedene Regionen bieten unterschiedliche Anbieter an.
    - Die _Cluster-Tier_- und _Additional Settings_-Einstellungen müssen nicht geändert werden. Sie können den Namen Ihres Clusters unter _Cluster Name_ ändern. Für dieses Tutorial nennen wir ihn `Cluster0`.
    - Klicken Sie auf die Schaltfläche **Create Cluster** (das Erstellen des Clusters dauert einige Minuten).
 
 4. Dadurch wird der _Security Quickstart_-Bereich geöffnet.
-   ![Richten Sie die Zugriffsregeln auf dem Bildschirm Security Quickstart auf MongoDB Atlas ein.](mongodb_atlas_-_securityquickstart.jpg)
+   ![Richten Sie die Zugriffsregeln auf dem Bildschirm Security Quickstart auf MongoDB Atlas ein.](assets/mongodb_atlas_-_securityquickstart.jpg)
 
    - Geben Sie einen Benutzernamen und ein Passwort ein. Denken Sie daran, die Anmeldeinformationen zu kopieren und sicher aufzubewahren, da wir sie später benötigen werden. Klicken Sie auf die Schaltfläche **Create User**.
 
@@ -113,36 +113,36 @@ Nach dem Einloggen gelangen Sie zur [Startseite](https://cloud.mongodb.com/v2):
    - Klicken Sie auf die Schaltfläche **Finish and Close**.
 
 5. Dadurch gelangen Sie zu folgendem Bildschirm. Klicken Sie auf die Schaltfläche **Go to Databases**.
-   ![Nach der Einrichtung der Zugriffsregeln zu Datenbanken auf MongoDB Atlas gehen.](mongodb_atlas_-_accessrules.jpg)
+   ![Nach der Einrichtung der Zugriffsregeln zu Datenbanken auf MongoDB Atlas gehen.](assets/mongodb_atlas_-_accessrules.jpg)
 
 6. Sie kehren zum Bildschirm _Database Deployments_ zurück. Klicken Sie auf die Schaltfläche **Browse Collections**.
-   ![Eine Sammlung auf MongoDB Atlas einrichten.](mongodb_atlas_-_createcollection.jpg)
+   ![Eine Sammlung auf MongoDB Atlas einrichten.](assets/mongodb_atlas_-_createcollection.jpg)
 
 7. Dadurch wird der Abschnitt _Collections_ geöffnet. Klicken Sie auf die Schaltfläche **Add My Own Data**.
-   ![Eine Datenbank auf MongoDB Atlas erstellen.](mongodb_atlas_-_adddata.jpg)
+   ![Eine Datenbank auf MongoDB Atlas erstellen.](assets/mongodb_atlas_-_adddata.jpg)
 
 8. Dadurch wird der Bildschirm _Create Database_ geöffnet.
 
-   ![Details während der Erstellung einer Datenbank auf MongoDB Atlas.](mongodb_atlas_-_databasedetails.jpg)
+   ![Details während der Erstellung einer Datenbank auf MongoDB Atlas.](assets/mongodb_atlas_-_databasedetails.jpg)
 
    - Geben Sie den Namen für die neue Datenbank als `local_library` ein.
    - Geben Sie den Namen der Sammlung als `Collection0` ein.
    - Klicken Sie auf die Schaltfläche **Create**, um die Datenbank zu erstellen.
 
 9. Sie kehren zum Bildschirm _Collections_ zurück, und Ihre Datenbank wurde erstellt.
-   ![Bestätigung der Erstellung einer Datenbank auf MongoDB Atlas.](mongodb_atlas_-_databasecreated.jpg)
+   ![Bestätigung der Erstellung einer Datenbank auf MongoDB Atlas.](assets/mongodb_atlas_-_databasecreated.jpg)
 
    - Klicken Sie auf den Tab _Overview_, um zur Clusterübersicht zurückzukehren.
 
 10. Klicken Sie auf der Cluster0-Übersicht auf die Schaltfläche **Connect**.
-    ![Verbindung einrichten, nachdem ein Cluster auf MongoDB Atlas erstellt wurde.](mongodb_atlas_-_connectbutton.jpg)
+    ![Verbindung einrichten, nachdem ein Cluster auf MongoDB Atlas erstellt wurde.](assets/mongodb_atlas_-_connectbutton.jpg)
 
 11. Dadurch wird der Bildschirm _Connect to Cluster_ geöffnet.
     Wählen Sie die Option **Connect your application** aus.
-    ![Eine Verbindungsmethode auf MongoDB Atlas auswählen.](mongodb_atlas_-_chooseaconnectionmethod.jpg)
+    ![Eine Verbindungsmethode auf MongoDB Atlas auswählen.](assets/mongodb_atlas_-_chooseaconnectionmethod.jpg)
 
 12. Sie sehen nun den Bildschirm _Connect_.
-    ![Die Short SRV-Verbindung auswählen, wenn eine Verbindung auf MongoDB Atlas eingerichtet wird.](mongodb_atlas_-_connectforshortsrv.jpg)
+    ![Die Short SRV-Verbindung auswählen, wenn eine Verbindung auf MongoDB Atlas eingerichtet wird.](assets/mongodb_atlas_-_connectforshortsrv.jpg)
 
     - Wählen Sie den Node-Treiber und die Version wie gezeigt aus.
     - Klicken Sie auf das Symbol **Copy**, um die Verbindungszeichenfolge zu kopieren.

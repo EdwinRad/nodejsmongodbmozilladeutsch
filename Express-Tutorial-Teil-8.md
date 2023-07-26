@@ -128,7 +128,7 @@ Beachten Sie, dass die Vorlagenwerte für die Daten die Schlüssel sind, die ang
 
 Zu diesem Zeitpunkt sollten wir alles erstellt haben, was zur Anzeige der Indexseite benötigt wird. Starten Sie die Anwendung und öffnen Sie Ihren Browser auf `http://localhost:3000/`. Wenn alles richtig eingerichtet ist, sollte Ihre Seite etwa so aussehen wie im folgenden Screenshot.
 
-![Startseite - Express Local Library site](locallibary_express_home.png)
+![Startseite - Express Local Library site](assets/locallibary_express_home.png)
 
 > **Hinweis:** Sie können die Links in der Seitenleiste noch nicht _verwenden_, weil die URLs, Ansichten und Vorlagen für diese Seiten noch nicht definiert wurden. Wenn Sie es versuchen, erhalten Sie Fehler wie "NOT IMPLEMENTED: Book list" zum Beispiel, abhängig davon, auf welchen Link Sie klicken. Diese Zeichenkettenliterale (die durch richtige Daten ersetzt werden) wurden in den verschiedenen Controllern festgelegt, die in Ihrer "controllers" Datei leben.
 
@@ -196,7 +196,7 @@ Interessant hier ist, dass jedes Buch als zwei Zeilen definiert ist, wobei das P
 
 Starten Sie die Anwendung (siehe [Testing the routes](/de-DE/docs/Learn/Server-side/Express_Nodejs/routes#testing_the_routes) für die entsprechenden Befehle) und öffnen Sie Ihren Browser unter `http://localhost:3000/`. Wählen Sie dann den Link _Alle Bücher_. Wenn alles richtig eingerichtet ist, sollte Ihre Seite etwa so aussehen wie im folgenden Screenshot.
 
-![Buchliste Seite - Express Local Library site](new_book_list.png)
+![Buchliste Seite - Express Local Library site](assets/new_book_list.png)
 
 
 ## BookInstance list page
@@ -265,4 +265,4 @@ edatum. Eine neue Funktion wird eingeführt - wir können die Punkt-Notation nac
 
 Starten Sie die Anwendung, öffnen Sie Ihren Browser unter `http://localhost:3000/` und wählen Sie dann den Link _Alle Buch-Instanzen_. Wenn alles richtig eingerichtet ist, sollte Ihre Seite etwa so aussehen wie im folgenden Screenshot.
 
-![Buchinstanz Liste Seite - Express Local Library site](locallibary_express_bookinstance_list.png)
+![Buchinstanz Liste Seite - Express Local Library site](assets/locallibary_express_bookinstance_list.png)
